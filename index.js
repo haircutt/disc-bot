@@ -57,6 +57,7 @@ client.on('messageCreate', async (message) => {
         message.channel.send("PONG \n" + `🏓Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms` + "\nPING");
     }
     //TODO: features
+    //
 
 });
  
