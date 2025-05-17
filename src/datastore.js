@@ -16,11 +16,8 @@ const Insults = Object.freeze({
   PETS: "Even your dog pretends you don't exist.",
   MUSIC: "Your taste in music sounds like a broken dial-up modem.",
   FITNESS: "The only exercise you get is jumping to conclusions.",
-  EXTRA1: "You actually sick u silly bitch"
+  EXTRA1: "You actually suck u silly bitch"
 });
 
-module.exports = { 
-  Insults,
-  getAllInsults: () => Object.values(Insults) 
-};
+module.exports = { Insults };
 
