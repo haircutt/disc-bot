@@ -30,7 +30,7 @@ async function generateLLMInsult() {
       {
         method: 'POST',
         headers: {
-          'Authorization': `Bearer ${process.env.HUGGING_FACE_API}`,
+          'Authorization': `Bearer ${LLM_client}`,
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({ inputs: prompt })
@@ -54,9 +54,9 @@ client.on('messageCreate', async (message) => {
     // message.reply(generateLLMInsult());
     }
     if (message.content.toLowerCase() === prefix + "ping") {
-        //reply with user's ping
         message.channel.send("PONG \n" + `🏓Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms` + "\nPING");
     }
+    //TODO: features
 
 });
  
