@@ -45,6 +45,11 @@ async function generateLLMInsult() {
   }
 }
 
+function textToMessage(message) {
+  //TODO: takes input from terminal --> sends as message via bot
+  message = 'you suck';
+  return message;
+}
 client.on('messageCreate', async (message) => {
     if (message.content.toLowerCase() === prefix + "test") {
         message.reply("Test successful!");
