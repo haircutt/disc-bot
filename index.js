@@ -1,4 +1,4 @@
- { REST, Routes } from 'discord.js';
+ import { REST, Routes } from 'discord.js';
 
 
 require('dotenv').config(); 
@@ -73,7 +73,7 @@ const LLM_client = process.env.HUGGING_FACE_API;
 //   }
 // }
 
-generateLLMInsult();
+// generateLLMInsult();
 
 function textToMessage(message) {
   //TODO: takes input from terminal --> sends as message via bot
