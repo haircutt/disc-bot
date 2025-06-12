@@ -4,29 +4,6 @@
 require('dotenv').config(); 
 const { Insults } = require("./src/datastore"); 
 const Discord = require("discord.js");
-
-// const commands = [
-//   {
-//     name: 'ping',
-//     description: 'Replies with Pong!',
-//   },
-// ];
-
-// const rest = new REST({ version: '10' }).setToken(TOKEN);
-
-// try {
-//   console.log('Started refreshing application (/) commands.');
-
-//   await rest.put(Routes.applicationCommands(CLIENT_ID), { body: commands });
-
-//   console.log('Successfully reloaded application (/) commands.');
-// } catch (error) {
-//   console.error(error);
-// }
-// const client = new Discord.Client({
-//     intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS", "MESSAGE_CONTENT"],
-//     partials: ["CHANNEL", "MESSAGE"]
-// });
  
 const token = process.env.CLIENT_TOKEN;
 const prefix = process.env.PREFIX;
